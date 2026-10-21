@@ -28,7 +28,7 @@ export const translations = {
       shopNow: 'Bekijk shop',
     },
     home: {
-      heroTagline: 'Coureur | Kart.',
+      heroTagline: 'Coureur | Kart',
       heroTitle: 'Naomi Veenema',
       heroSubtitle: 'Van de kartbaan in Leeuwarden naar de internationale autosport. Passie, focus en de jacht op de ideale lijn.',
       heroSlogan: 'Er is altijd een weg - en ik rij hem zelf.',
@@ -227,7 +227,7 @@ export const translations = {
       shopNow: 'Shop now',
     },
     home: {
-      heroTagline: 'Racing Driver | Kart.',
+      heroTagline: 'Racing Driver | Kart',
       heroTitle: 'Naomi Veenema',
       heroSubtitle: 'From kart track in Leeuwarden to international motorsport. Passion, focus and the pursuit of the ideal line.',
       heroSlogan: "There is always a way \u2013 and I'm at the wheel.",
