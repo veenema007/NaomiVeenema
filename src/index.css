@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1a0006;
+    color: #f5f5f5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 0.02em;
+  }
+
+  ::selection {
+    background-color: #800020;
+    color: #fff;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1a0006;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #800020;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b32f50;
+  }
+}
+
+@layer components {
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #edcf73 0%, #d3ae36 50%, #b8902a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-burgundy {
+    background: linear-gradient(135deg, #cc4668 0%, #800020 50%, #6b0a1c 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .border-gradient-gold {
+    border-image: linear-gradient(135deg, #d3ae36, #b8902a) 1;
+  }
+
+  .bg-carbon {
+    background-color: #24000a;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  .glass-dark {
+    background: rgba(26, 0, 6, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .racing-line {
+    position: relative;
+  }
+
+  .racing-line::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 48px;
+    height: 3px;
+    background: linear-gradient(90deg, #800020, #d3ae36);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-burgundy-800 text-white font-display font-semibold uppercase tracking-wider text-sm transition-all duration-300 hover:bg-burgundy-700 hover:shadow-lg hover:shadow-burgundy-800/50;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-gold-500 text-racing-black font-display font-semibold uppercase tracking-wider text-sm transition-all duration-300 hover:bg-gold-400 hover:shadow-lg hover:shadow-gold-500/50;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 border border-gold-500/50 text-gold-400 font-display font-semibold uppercase tracking-wider text-sm transition-all duration-300 hover:border-gold-500 hover:bg-gold-500/10;
+  }
+
+  .card-dark {
+    @apply bg-racing-dark border border-white/5 rounded-lg transition-all duration-300 hover:border-gold-500/30;
+  }
+
+  .section-pad {
+    @apply px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+  }
+
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+@layer utilities {
+  .text-shadow-lg {
+    text-shadow: 0 4px 24px rgba(0, 0, 0, 0.8);
+  }
+
+  .perspective {
+    perspective: 1000px;
+  }
+
+  .clip-slant {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
+
+  .clip-slant-reverse {
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  }
+}
