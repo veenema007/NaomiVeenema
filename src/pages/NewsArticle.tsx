@@ -40,6 +40,11 @@ export default function NewsArticle() {
   const body = (lang === 'nl' ? article.bodyNl : article.bodyEn)
     .split('\n\n')
     .filter((p) => p.trim().length > 0);
+  const captions = article.id === 12
+    ? (lang === 'nl'
+      ? ['TT Junior Track Assen', 'RACB Karting de Spa-Francorchamps']
+      : ['TT Junior Track Assen', 'RACB Karting de Spa-Francorchamps'])
+    : [];
 
   return (
     <>
@@ -109,14 +114,14 @@ export default function NewsArticle() {
                 </h2>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                   {article.images.filter(Boolean).map((image, i) => (
-                    <button
-                      key={i}
+                    <div key={image}>
+                      <button
                       onClick={() => setLightbox(image)}
                       className="relative rounded-lg overflow-hidden border border-white/10 group cursor-pointer"
                     >
                       <img
                         src={image}
-                        alt=""
+                        alt={captions[i] ?? ''}
                         className="w-full h-40 md:h-48 object-cover group-hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                       />
@@ -124,7 +129,13 @@ export default function NewsArticle() {
                       <div className="absolute top-2 right-2 w-9 h-9 bg-racing-black/60 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <ZoomIn size={16} className="text-gold-500" />
                       </div>
-                    </button>
+                      </button>
+                      {captions[i] && (
+                        <p className="mt-2 text-center text-sm font-display uppercase tracking-wider text-white/60">
+                          {captions[i]}
+                        </p>
+                      )}
+                    </div>
                   ))}
                 </div>
               </div>
