@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PageHeader from '@/components/PageHeader';
 import { useLang } from '@/i18n/LanguageContext';
 import { partners, naomiImages } from '@/data/content';
+import Seo from '@/components/Seo';
 
 export default function Partners() {
   const { lang, t } = useLang();
@@ -58,6 +59,11 @@ export default function Partners() {
 
   return (
     <>
+      <Seo
+        title="Partners"
+        description="Ontdek de partners en sponsoren die Naomi Veenema steunen op haar racereis. Word ook partner en maak deel uit van dit raceteam."
+        path="/partners"
+      />
       <PageHeader
         title={t.partners.title}
         subtitle={t.partners.subtitle}

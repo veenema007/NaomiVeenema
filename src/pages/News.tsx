@@ -4,6 +4,7 @@ import { Calendar, ArrowRight, Search } from 'lucide-react';
 import PageHeader from '@/components/PageHeader';
 import { useLang } from '@/i18n/LanguageContext';
 import { newsArticles, naomiImages } from '@/data/content';
+import Seo from '@/components/Seo';
 
 export default function News() {
   const { lang, t } = useLang();
@@ -41,6 +42,11 @@ export default function News() {
 
   return (
     <>
+      <Seo
+        title="Nieuws"
+        description="Het laatste nieuws over Naomi Veenema. Race-verslagen, teamupdates en achter de schermen bij deze jonge Nederlandse autocoureur."
+        path="/nieuws"
+      />
       <PageHeader
         title={t.news.title}
         subtitle={t.news.subtitle}

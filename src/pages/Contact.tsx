@@ -4,6 +4,7 @@ import PageHeader from '@/components/PageHeader';
 import { useLang } from '@/i18n/LanguageContext';
 import { supabase } from '@/lib/supabase';
 import { naomiImages } from '@/data/content';
+import Seo from '@/components/Seo';
 
 export default function Contact() {
   const { lang, t } = useLang();
@@ -43,6 +44,11 @@ export default function Contact() {
 
   return (
     <>
+      <Seo
+        title="Contact"
+        description="Neem contact op met Naomi Veenema voor samenwerkingen, sponsorship, media-aanvragen of algemene vragen. Reactie binnen 24-48 uur."
+        path="/contact"
+      />
       <PageHeader
         title={t.contact.title}
         subtitle={t.contact.subtitle}

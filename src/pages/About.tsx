@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PageHeader from '@/components/PageHeader';
 import { useLang } from '@/i18n/LanguageContext';
 import { careerHistory, naomiImages } from '@/data/content';
+import Seo from '@/components/Seo';
 
 export default function About() {
   const { lang, t } = useLang();
@@ -22,6 +23,11 @@ export default function About() {
 
   return (
     <>
+      <Seo
+        title="Over Mij"
+        description="Maak kennis met Naomi Veenema, Nederlandse autocoureur met passie voor racerij. Lees haar verhaal, carrière en ambitie om de top te bereiken."
+        path="/over-mij"
+      />
       <PageHeader
         title={t.about.title}
         subtitle={t.about.subtitle}

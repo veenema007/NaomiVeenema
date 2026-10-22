@@ -3,6 +3,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Calendar, ArrowLeft, ArrowRight, ChevronRight, X, ZoomIn } from 'lucide-react';
 import { useLang } from '@/i18n/LanguageContext';
 import { newsArticles } from '@/data/content';
+import Seo from '@/components/Seo';
 
 export default function NewsArticle() {
   const { id } = useParams<{ id: string }>();
@@ -42,6 +43,12 @@ export default function NewsArticle() {
 
   return (
     <>
+      <Seo
+        title={title}
+        description={lang === 'nl' ? article.excerptNl : article.excerptEn}
+        path={`/nieuws/${article.id}`}
+        image={article.image}
+      />
       {/* Hero image */}
       <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
         <div className="absolute inset-0">

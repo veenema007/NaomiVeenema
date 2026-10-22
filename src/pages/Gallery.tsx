@@ -3,6 +3,7 @@ import { X, ZoomIn } from 'lucide-react';
 import PageHeader from '@/components/PageHeader';
 import { useLang } from '@/i18n/LanguageContext';
 import { galleryImages, naomiImages, newsArticles } from '@/data/content';
+import Seo from '@/components/Seo';
 
 export default function Gallery() {
   const { t } = useLang();
@@ -34,6 +35,11 @@ export default function Gallery() {
 
   return (
     <>
+      <Seo
+        title="Fotogalerij"
+        description="Bekijk foto's van Naomi Veenema op en rond het circuit. Actiefoto's, podia en portretten van deze Nederlandse autocoureur."
+        path="/fotogalerij"
+      />
       <PageHeader
         title={t.gallery.title}
         subtitle={t.gallery.subtitle}

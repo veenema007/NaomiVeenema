@@ -3,6 +3,7 @@ import { Calendar, MapPin } from 'lucide-react';
 import PageHeader from '@/components/PageHeader';
 import { useLang } from '@/i18n/LanguageContext';
 import { raceCalendar, naomiImages } from '@/data/content';
+import Seo from '@/components/Seo';
 
 export default function Agenda() {
   const { lang, t } = useLang();
@@ -55,6 +56,11 @@ export default function Agenda() {
 
   return (
     <>
+      <Seo
+        title="Agenda"
+        description="Bekijk de race-agenda van Naomi Veenema. Alle aankomende en afgelopen races, data, circuits en resultaten op één plek."
+        path="/agenda"
+      />
       <PageHeader
         title={t.agenda.title}
         subtitle={t.agenda.subtitle}

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ChevronRight, ArrowRight, Trophy, Flag, Clock, Calendar, MapPin, Volume2, VolumeX } from 'lucide-react';
 import { useLang } from '@/i18n/LanguageContext';
 import { raceCalendar, newsArticles, partners, naomiImages } from '@/data/content';
+import Seo from '@/components/Seo';
 
 type CountdownValues = {
   days: number;
@@ -167,6 +168,11 @@ export default function Home() {
 
   return (
     <>
+      <Seo
+        title="Naomi Veenema | Officiële Website & Racing Driver"
+        description="Ontdek de officiële website van Naomi Veenema, talentvolle Nederlandse autocoureur. Volg haar racereis, agenda, laatste nieuws en partners op het circuit."
+        path="/"
+      />
       {/* Hero */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
