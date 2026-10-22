@@ -221,14 +221,14 @@ export const raceCalendar = [
   },
   {
     id: 2,
-    round: 8,
-    name: 'Dutch Racing Series, GP 8',
-    circuit: 'RACB Karting Spa-Francorchamps',
-    country: 'België',
-    countryEn: 'Belgium',
+    round: null,
+    name: 'NXT GP Dutch Open 7',
+    circuit: 'TT Junior Track Assen',
+    country: 'Nederland',
+    countryEn: 'Netherlands',
     date: '2026-10-30',
     endDate: '2026-11-01',
-    flag: '🇧🇪',
+    flag: '🇳🇱',
     status: 'scheduled',
     time: '10:00 - 17:00',
   },
@@ -285,6 +285,20 @@ export const careerHistory = [
 ];
 
 export const newsArticles = [
+  {
+    id: 12,
+    category: 'race',
+    date: '2026-10-22',
+    image: '/news/assen_junior_track.jpg',
+    imagePosition: 'center 55%',
+    images: ['/news/assen_junior_track.jpg', '/news/racb_karting_de_spa_francorchamps.jpg'],
+    titleNl: 'Na een top weekend in Emmen, doe ik ook mee aan de laatste Dutch Open van NXTGP in Assen!',
+    titleEn: 'After a great weekend in Emmen, I will also compete in the final NXTGP Dutch Open in Assen!',
+    excerptNl: 'Na mijn podium in Emmen rijd ik ook de laatste Dutch Open van NXTGP. De race vindt plaats in Assen in plaats van de geplande DRS GP 8 in Spa-Francorchamps.',
+    excerptEn: 'After my podium in Emmen, I will also compete in the final NXTGP Dutch Open. The race will take place in Assen instead of the planned DRS GP 8 in Spa-Francorchamps.',
+    bodyNl: 'Na een top weekend in Emmen, doe ik ook mee aan de laatste Dutch Open van NXTGP in Assen! De agenda is gewijzigd: de NXT GP Dutch Open 7 wordt gereden op de TT Junior Track in Assen, in plaats van de Dutch Racing Series GP 8 in Spa-Francorchamps. Ik kijk ernaar uit om opnieuw de strijd aan te gaan en het seizoen sterk af te sluiten.',
+    bodyEn: 'After a great weekend in Emmen, I will also compete in the final NXTGP Dutch Open in Assen! The schedule has changed: the NXT GP Dutch Open 7 will be held at the TT Junior Track in Assen instead of the Dutch Racing Series GP 8 in Spa-Francorchamps. I am looking forward to racing again and finishing the season strongly.'
+  },
   {
     id: 1,
     category: 'race',

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronRight, ArrowRight, Trophy, Flag, Clock, Calendar, MapPin, Volume2, VolumeX } from 'lucide-react';
+import { ChevronRight, ArrowRight, ArrowUpRight, Trophy, Flag, Clock, Calendar, MapPin, Volume2, VolumeX } from 'lucide-react';
 import { useLang } from '@/i18n/LanguageContext';
 import { raceCalendar, newsArticles, partners, naomiImages } from '@/data/content';
 import Seo from '@/components/Seo';
@@ -218,6 +218,22 @@ export default function Home() {
               <Link to="/agenda" className="btn-outline">
                 {t.home.heroCta2}
                 <ChevronRight size={18} />
+              </Link>
+              <Link
+                to="/nieuws/12"
+                className="group relative isolate min-h-[72px] w-full max-w-sm overflow-hidden border border-gold-500/60 bg-burgundy-800 px-5 py-3 text-left shadow-lg shadow-burgundy-950/40 transition-all duration-300 hover:-translate-y-1 hover:border-gold-400 hover:bg-burgundy-700 sm:w-[330px]"
+                style={{ clipPath: 'polygon(8% 0, 100% 0, 92% 100%, 0 100%)' }}
+              >
+                <span className="absolute inset-y-0 left-0 w-1 bg-gold-500 transition-all duration-300 group-hover:w-2" />
+                <span className="block pl-2 pr-7 font-display text-[0.68rem] font-semibold uppercase leading-tight tracking-[0.12em] text-gold-300">
+                  {lang === 'nl' ? 'Wijziging agenda' : 'Schedule update'}
+                </span>
+                <span className="mt-1 block pl-2 pr-5 text-sm font-medium leading-snug text-white">
+                  {lang === 'nl'
+                    ? 'NXT GP Dutch Open 7 in Assen i.p.v. Dutch Racing Series GP 8 in Spa'
+                    : 'NXT GP Dutch Open 7 in Assen instead of Dutch Racing Series GP 8 in Spa'}
+                </span>
+                <ArrowUpRight size={18} className="absolute right-4 top-1/2 -translate-y-1/2 text-gold-400 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-[calc(50%+2px)]" />
               </Link>
             </div>
           </div>
