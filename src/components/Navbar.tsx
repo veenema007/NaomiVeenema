@@ -1,6 +1,6 @@
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { Menu, X, Globe, ChevronDown } from 'lucide-react';
+import { Menu, X, Globe, ChevronDown, Instagram, Youtube, Facebook } from 'lucide-react';
 import { useLang } from '@/i18n/LanguageContext';
 
 export default function Navbar() {
@@ -76,8 +76,28 @@ export default function Navbar() {
               ))}
             </nav>
 
-            {/* Right side - language + mobile toggle */}
+            {/* Right side - socials + language + mobile toggle */}
             <div className="flex items-center gap-3">
+              {/* Social buttons */}
+              <div className="hidden xl:flex items-center gap-2 mr-1">
+                {[
+                  { Icon: Instagram, href: 'https://www.instagram.com/naomiveenema/', label: 'Instagram', hoverClass: 'hover:bg-gradient-to-tr hover:from-purple-600 hover:via-pink-500 hover:to-orange-400 hover:border-transparent hover:text-white' },
+                  { Icon: Youtube, href: 'https://youtube.com/@naomiveenema', label: 'YouTube', hoverClass: 'hover:bg-red-600 hover:border-transparent hover:text-white' },
+                  { Icon: Facebook, href: 'https://www.facebook.com/profile.php?id=100076864294541', label: 'Facebook', hoverClass: 'hover:bg-blue-600 hover:border-transparent hover:text-white' },
+                ].map(({ Icon, href, label, hoverClass }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={label}
+                    className={`flex h-9 w-9 items-center justify-center rounded-md border border-white/10 text-white/70 transition-all duration-300 ${hoverClass}`}
+                  >
+                    <Icon size={17} />
+                  </a>
+                ))}
+              </div>
+
               {/* Language switcher */}
               <div className="relative">
                 <button
