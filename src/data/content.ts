@@ -286,6 +286,20 @@ export const careerHistory = [
 
 export const newsArticles = [
   {
+    id: 13,
+    category: 'race',
+    date: '2026-11-06',
+    image: '',
+    imagePosition: 'center 50%',
+    images: [],
+    titleNl: 'Dubbel podium bij NXT GP Dutch Open 7 in Assen!',
+    titleEn: 'Double podium at NXT GP Dutch Open 7 in Assen!',
+    excerptNl: 'Op 30 oktober tot 1 november reed Naomi de NXT GP Dutch Open 7 op de TT Junior Track in Assen. Ze eindigde op de 2de plaats bij de Semi-Pro en ook 2de bij de Rookies.',
+    excerptEn: 'From 30 October to 1 November, Naomi raced the NXT GP Dutch Open 7 at the TT Junior Track in Assen. She finished 2nd in the Semi-Pro class and also 2nd in the Rookies class.',
+    bodyNl: 'Op 30 oktober tot en met 1 november reed ik de NXT GP Dutch Open 7 op de TT Junior Track in Assen. Een fantastisch weekend met mooie races en veel strijd op de baan. Ik eindigde op de 2de plaats bij de Semi-Pro en ook op de 2de plaats bij de Rookies. Twee keer op het podium in n weekend, daar ben ik super trots op! Foto\'s van dit weekend volgen later.',
+    bodyEn: 'From 30 October to 1 November, I raced the NXT GP Dutch Open 7 at the TT Junior Track in Assen. A fantastic weekend with great races and plenty of battles on track. I finished 2nd in the Semi-Pro class and also 2nd in the Rookies class. Two podiums in one weekend, I am super proud of that! Photos from this weekend will follow later.'
+  },
+  {
     id: 12,
     category: 'race',
     date: '2026-10-22',
