@@ -274,6 +274,7 @@ export const raceCalendar = [
 ];
 
 export const careerHistory = [
+  { year: '2026', series: 'NXT GP Dutch Open 7', seriesEn: 'NXT GP Dutch Open 7', result: '2e plaats Semi-pro & 2e plaats Rookies', resultEn: '2nd place Semi-pro & 2nd place Rookies' },
   { year: '2026', series: 'NXT GP Dutch Open 6', seriesEn: 'NXT GP Dutch Open 6', result: '3e plaats', resultEn: '3rd place' },
   { year: '2026', series: "Kampioen Women's Only", seriesEn: "Women's Only Champion", result: 'Kampioen (24 races)', resultEn: 'Champion (24 races)' },
   { year: '2026', series: 'Dutch Racing Series + NXT GP', seriesEn: 'Dutch Racing Series + NXT GP', result: 'Huidig seizoen', resultEn: 'Current season' },
