@@ -124,16 +124,14 @@ export default function Gallery() {
             {allImages.map((img, i) => (
               <div
                 key={img.id}
-                className={`group relative overflow-hidden rounded-lg cursor-pointer animate-scale-in ${
-                  i % 5 === 0 ? 'sm:col-span-2 sm:row-span-2' : ''
-                }`}
+                className="group relative overflow-hidden rounded-lg cursor-pointer animate-scale-in aspect-[4/3]"
                 onClick={() => setLightboxIndex(i)}
                 style={{ animationDelay: `${i * 50}ms` }}
               >
                 <img
                   src={img.url}
                   alt={img.alt}
-                  className={`w-full ${i % 5 === 0 ? 'h-full min-h-[300px]' : 'h-64'} object-cover group-hover:scale-110 transition-transform duration-500`}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   style={{ objectPosition: img.objectPosition ?? galleryObjectPositions[img.url] ?? 'center' }}
                   loading="lazy"
                 />
