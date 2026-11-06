@@ -241,8 +241,8 @@ export default function Home() {
             className="w-full h-full object-cover object-[center_20%]"
             fetchPriority="high"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-racing-black via-racing-black/80 to-racing-black/30" />
-          <div className="absolute inset-0 bg-gradient-to-t from-racing-black via-transparent to-racing-black/50" />
+          <div className="absolute inset-0 bg-gradient-to-r from-racing-black/90 via-racing-black/50 to-racing-black/10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-racing-black via-transparent to-racing-black/20" />
         </div>
 
         {/* Racing stripes accent */}
