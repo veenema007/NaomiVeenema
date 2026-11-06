@@ -13,7 +13,7 @@ const DEFAULT_IMAGE = '/images/logo/ndv-logo-header.png';
 export default function Seo({ title, description, path = '', image }: SeoProps) {
   const url = `${BASE_URL}${path}`;
   const ogImage = image ?? `${BASE_URL}${DEFAULT_IMAGE}`;
-  const fullTitle = title === 'Naomi Veenema | Officiële Website & Racing Driver'
+  const fullTitle = title === 'Naomi Veenema'
     ? title
     : `${title} | Naomi Veenema`;
 

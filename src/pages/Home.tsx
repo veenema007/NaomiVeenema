@@ -228,7 +228,7 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="Naomi Veenema | Officiële Website & Racing Driver"
+        title="Naomi Veenema"
         description="Ontdek de officiële website van Naomi Veenema, talentvolle Nederlandse autocoureur. Volg haar racereis, agenda, laatste nieuws en partners op het circuit."
         path="/"
       />
