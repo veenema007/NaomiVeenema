@@ -288,7 +288,7 @@ export const newsArticles = [
   {
     id: 13,
     category: 'race',
-    date: '2026-11-06',
+    date: '2026-11-01',
     image: '',
     imagePosition: 'center 50%',
     images: [],
