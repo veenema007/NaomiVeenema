@@ -24,7 +24,7 @@ export default function About() {
   return (
     <>
       <Seo
-        title="Over Mij"
+        title="Over mij"
         description="Maak kennis met Naomi Veenema, Nederlandse autocoureur met passie voor racerij. Lees haar verhaal, carrière en ambitie om de top te bereiken."
         path="/over-mij"
       />

@@ -4,7 +4,7 @@ export const translations = {
   nl: {
     nav: {
       home: 'Home',
-      about: 'Over Mij',
+      about: 'Over mij',
       agenda: 'Agenda',
       partners: 'Partners',
       news: 'Nieuws',
@@ -64,7 +64,7 @@ export const translations = {
       countdownSoundOff: 'Tikgeluid uitschakelen',
     },
     about: {
-      title: 'Over Mij',
+      title: 'Over mij',
       subtitle: 'Ken de coureur achter de helm',
       intro: 'Ik ben Naomi Veenema en ik kom uit Leeuwarden. Mijn grote passie is racen en alles wat daarmee te maken heeft. Ik heb een hoofd dat nooit stilstaat, totdat ik in een kart of auto stap. Dan stoppen alle gedachten. Niet omdat ik uitschakel, maar omdat ik volledig aan sta: analyseren, voelen, sturen.',
       bio1Title: 'Het begin',
