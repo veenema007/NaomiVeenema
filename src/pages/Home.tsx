@@ -232,6 +232,35 @@ export default function Home() {
 
       <Countdown />
 
+      {/* Partners marquee */}
+      <section className="bg-racing-black border-y border-white/5 py-10 overflow-hidden">
+        <div className="container-max mb-6">
+          <div className="text-center">
+            <div className="flex items-center justify-center gap-3 mb-3">
+              <div className="h-px w-12 bg-gold-500" />
+              <span className="font-display text-gold-500 text-sm uppercase tracking-[0.3em]">{t.common.myPartners}</span>
+              <div className="h-px w-12 bg-gold-500" />
+            </div>
+          </div>
+        </div>
+        <div className="relative">
+          <div className="flex gap-8 animate-marquee w-max">
+            {[...partners, ...partners, ...partners].map((p, i) => (
+              <div
+                key={i}
+                className="flex-shrink-0 w-40 h-20 flex items-center justify-center bg-racing-dark border border-white/5 rounded-lg group hover:border-gold-500/40 transition-all px-4"
+              >
+                <img
+                  src={p.logo}
+                  alt={p.name}
+                  className="max-h-14 max-w-full object-contain opacity-50 group-hover:opacity-100 transition-opacity duration-300"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Stats */}
       <section className="bg-racing-dark border-y border-white/5 section-pad">
         <div className="container-max">
@@ -404,36 +433,6 @@ export default function Home() {
                   </p>
                 </div>
               </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Partners marquee */}
-      <section className="bg-racing-dark border-y border-white/5 py-12 overflow-hidden">
-        <div className="container-max mb-8">
-          <div className="text-center">
-            <div className="flex items-center justify-center gap-3 mb-3">
-              <div className="h-px w-12 bg-gold-500" />
-              <span className="font-display text-gold-500 text-sm uppercase tracking-[0.3em]">{t.common.myPartners}</span>
-              <div className="h-px w-12 bg-gold-500" />
-            </div>
-
-          </div>
-        </div>
-        <div className="relative">
-          <div className="flex gap-8 animate-marquee w-max">
-            {[...partners, ...partners, ...partners].map((p, i) => (
-              <div
-                key={i}
-                className="flex-shrink-0 w-40 h-20 flex items-center justify-center bg-racing-black border border-white/5 rounded-lg group hover:border-gold-500/40 transition-all px-4"
-              >
-                <img
-                  src={p.logo}
-                  alt={p.name}
-                  className="max-h-14 max-w-full object-contain opacity-50 group-hover:opacity-100 transition-opacity duration-300"
-                />
-              </div>
             ))}
           </div>
         </div>
