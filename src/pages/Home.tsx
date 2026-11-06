@@ -31,41 +31,100 @@ function getCountdownValues(): CountdownValues {
 function playTick(audioContext: AudioContext): void {
   const now = audioContext.currentTime;
 
-  const osc = audioContext.createOscillator();
-  const subOsc = audioContext.createOscillator();
-  const noiseGain = audioContext.createGain();
   const masterGain = audioContext.createGain();
-
-  osc.type = 'sine';
-  osc.frequency.setValueAtTime(110, now);
-  osc.frequency.exponentialRampToValueAtTime(55, now + 0.18);
-
-  subOsc.type = 'sine';
-  subOsc.frequency.setValueAtTime(55, now);
-  subOsc.frequency.exponentialRampToValueAtTime(27.5, now + 0.22);
-
-  const noiseBuffer = audioContext.createBuffer(1, audioContext.sampleRate * 0.12, audioContext.sampleRate);
-  const data = noiseBuffer.getChannelData(0);
-  for (let i = 0; i < data.length; i++) data[i] = (Math.random() * 2 - 1) * (1 - i / data.length);
-  const noise = audioContext.createBufferSource();
-  noise.buffer = noiseBuffer;
-  noiseGain.gain.setValueAtTime(0.35, now);
-  noiseGain.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
-
-  masterGain.gain.setValueAtTime(0.9, now);
-  masterGain.gain.exponentialRampToValueAtTime(0.001, now + 0.35);
-
-  osc.connect(masterGain);
-  subOsc.connect(masterGain);
-  noise.connect(noiseGain);
-  noiseGain.connect(masterGain);
+  masterGain.gain.setValueAtTime(0.85, now);
+  masterGain.gain.exponentialRampToValueAtTime(0.001, now + 1.8);
   masterGain.connect(audioContext.destination);
 
-  osc.start(now);
-  osc.stop(now + 0.35);
+  const bodyOsc = audioContext.createOscillator();
+  const bodyGain = audioContext.createGain();
+  bodyOsc.type = 'triangle';
+  bodyOsc.frequency.setValueAtTime(73.4, now);
+  bodyOsc.frequency.exponentialRampToValueAtTime(49, now + 0.12);
+  bodyGain.gain.setValueAtTime(0.7, now);
+  bodyGain.gain.exponentialRampToValueAtTime(0.001, now + 1.2);
+  bodyOsc.connect(bodyGain);
+  bodyGain.connect(masterGain);
+  bodyOsc.start(now);
+  bodyOsc.stop(now + 1.3);
+
+  const subOsc = audioContext.createOscillator();
+  const subGain = audioContext.createGain();
+  subOsc.type = 'sine';
+  subOsc.frequency.setValueAtTime(36.7, now);
+  subOsc.frequency.exponentialRampToValueAtTime(24.5, now + 0.4);
+  subGain.gain.setValueAtTime(0.55, now);
+  subGain.gain.exponentialRampToValueAtTime(0.001, now + 1.6);
+  subOsc.connect(subGain);
+  subGain.connect(masterGain);
   subOsc.start(now);
-  subOsc.stop(now + 0.35);
-  noise.start(now);
+  subOsc.stop(now + 1.7);
+
+  const metalOsc = audioContext.createOscillator();
+  const metalGain = audioContext.createGain();
+  metalOsc.type = 'square';
+  metalOsc.frequency.setValueAtTime(587, now);
+  metalOsc.frequency.exponentialRampToValueAtTime(294, now + 0.08);
+  metalGain.gain.setValueAtTime(0.12, now);
+  metalGain.gain.exponentialRampToValueAtTime(0.001, now + 0.4);
+  metalOsc.connect(metalGain);
+  metalGain.connect(masterGain);
+  metalOsc.start(now);
+  metalOsc.stop(now + 0.45);
+
+  const strikeLen = 0.06;
+  const strikeBuffer = audioContext.createBuffer(1, Math.ceil(audioContext.sampleRate * strikeLen), audioContext.sampleRate);
+  const strikeData = strikeBuffer.getChannelData(0);
+  for (let i = 0; i < strikeData.length; i++) {
+    strikeData[i] = (Math.random() * 2 - 1) * (1 - i / strikeData.length) ** 2;
+  }
+  const strike = audioContext.createBufferSource();
+  strike.buffer = strikeBuffer;
+  const strikeFilter = audioContext.createBiquadFilter();
+  strikeFilter.type = 'bandpass';
+  strikeFilter.frequency.setValueAtTime(2200, now);
+  strikeFilter.Q.setValueAtTime(2, now);
+  const strikeGain = audioContext.createGain();
+  strikeGain.gain.setValueAtTime(0.5, now);
+  strikeGain.gain.exponentialRampToValueAtTime(0.001, now + strikeLen);
+  strike.connect(strikeFilter);
+  strikeFilter.connect(strikeGain);
+  strikeGain.connect(masterGain);
+  strike.start(now);
+
+  const rumbleLen = 1.5;
+  const rumbleBuffer = audioContext.createBuffer(1, Math.ceil(audioContext.sampleRate * rumbleLen), audioContext.sampleRate);
+  const rumbleData = rumbleBuffer.getChannelData(0);
+  for (let i = 0; i < rumbleData.length; i++) {
+    rumbleData[i] = (Math.random() * 2 - 1) * (1 - i / rumbleData.length);
+  }
+  const rumble = audioContext.createBufferSource();
+  rumble.buffer = rumbleBuffer;
+  const rumbleFilter = audioContext.createBiquadFilter();
+  rumbleFilter.type = 'lowpass';
+  rumbleFilter.frequency.setValueAtTime(120, now);
+  rumbleFilter.frequency.exponentialRampToValueAtTime(40, now + rumbleLen);
+  rumbleFilter.Q.setValueAtTime(1.5, now);
+  const rumbleGain = audioContext.createGain();
+  rumbleGain.gain.setValueAtTime(0.25, now);
+  rumbleGain.gain.exponentialRampToValueAtTime(0.001, now + rumbleLen);
+  rumble.connect(rumbleFilter);
+  rumbleFilter.connect(rumbleGain);
+  rumbleGain.connect(masterGain);
+  rumble.start(now);
+
+  const delay = audioContext.createDelay(1.5);
+  delay.delayTime.setValueAtTime(0.45, now);
+  const delayFeedback = audioContext.createGain();
+  delayFeedback.gain.setValueAtTime(0.35, now);
+  const delayFilter = audioContext.createBiquadFilter();
+  delayFilter.type = 'lowpass';
+  delayFilter.frequency.setValueAtTime(600, now);
+  bodyGain.connect(delay);
+  delay.connect(delayFilter);
+  delayFilter.connect(delayFeedback);
+  delayFeedback.connect(delay);
+  delayFilter.connect(masterGain);
 }
 
 function Countdown() {
