@@ -1,11 +1,9 @@
-const CDN = 'https://d6a25a83f1.clvaw-cdnwnd.com/8138f80bc5dd9efdf18efeaeff5fe966';
-
 export const naomiImages = {
-  logo: `${CDN}/200000418-c7578c7579/Logo_NDV-removebg-preview.png?ph=d6a25a83f1`,
-  portraitRace: `${CDN}/200000236-58ddb58dde/24277839-a6dc3828b5b58e0794ef.jpeg?ph=d6a25a83f1`,
-  action1: `${CDN}/200000234-495294952b/20260805_213725.jpeg?ph=d6a25a83f1`,
-  drsZwolle: `${CDN}/200000176-9afdf9afe1/260531_DRS_Naomi_Zwolle9_logo-2.jpeg?ph=d6a25a83f1`,
-  action2: `${CDN}/200000391-45d3e45d40/20250528_195310-85.jpeg?ph=d6a25a83f1`,
+  logo: '/images/logo/ndv-logo.png',
+  portraitRace: 'https://images.pexels.com/photos/34970445/pexels-photo-34970445.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  action1: 'https://images.pexels.com/photos/12797362/pexels-photo-12797362.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  drsZwolle: 'https://images.pexels.com/photos/34430788/pexels-photo-34430788.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  action2: 'https://images.pexels.com/photos/8368861/pexels-photo-8368861.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
 };
 
 export const raceCalendar = [
@@ -335,14 +333,14 @@ export const newsArticles = [
     image: '/images/news/GT_World_Challenge_Laura_van_den_Hengel_NDV_SNV.jpeg',
     images: [
       '/images/news/GT_World_Challenge_Laura_van_den_Hengel_NDV_SNV.jpeg',
-      '/images/news/GT World Challenge Ferrari Leclerc pitbox.jpeg',
-      '/images/news/GT World Challenge Mercedes pitbox.jpeg',
-      '/images/news/GT World Challenge NDV Flynth Schuring.jpeg',
-      '/images/news/GT World Challenge NDV gridwalk.jpeg',
-      '/images/news/GT World Challenge NDV Juncadella.jpeg',
-      '/images/news/GT World Challenge NDV Leclerc.jpeg',
-      '/images/news/GT World Challenge NDV Lulham.jpeg',
-      '/images/news/GT World Challenge NDV Valentino Rossi.jpeg',
+      '/images/news/GT_World_Challenge_Ferrari_Leclerc_pitbox.jpeg',
+      '/images/news/GT_World_Challenge_Mercedes_pitbox.jpeg',
+      '/images/news/GT_World_Challenge_NDV_Flynth_Schuring.jpeg',
+      '/images/news/GT_World_Challenge_NDV_gridwalk.jpeg',
+      '/images/news/GT_World_Challenge_NDV_Juncadella.jpeg',
+      '/images/news/GT_World_Challenge_NDV_Leclerc.jpeg',
+      '/images/news/GT_World_Challenge_NDV_Lulham.jpeg',
+      '/images/news/GT_World_Challenge_NDV_Valentino_Rossi.jpeg',
       '/images/news/GT_World_Challenge_Laura_van_den_Hengel_Maserati_NDV.jpeg',
       '/images/news/GT_World_Challenge_Laura_van_den_Hengel_pitbox.jpeg',
       '/images/news/GT_World_Challenge_NDV_gridwalk.jpeg',
@@ -358,10 +356,10 @@ export const newsArticles = [
     id: 3,
     category: 'race',
     date: '2026-09-13',
-    image: '/images/news/DRS GP 7 Lelystad pit.jpeg',
+    image: '/images/news/DRS_GP_7_Lelystad_pit.jpeg',
     images: [
-      '/images/news/DRS GP 7 Lelystad pit.jpeg',
-      '/images/news/DRS GP 7 race.jpeg',
+      '/images/news/DRS_GP_7_Lelystad_pit.jpeg',
+      '/images/news/DRS_GP_7_race.jpeg',
     ],
     titleNl: 'DRS GP.7 - Lelystad',
     titleEn: 'DRS GP.7 - Lelystad',
@@ -486,17 +484,17 @@ export const galleryImages = [
 ];
 
 export const partners = [
-  { id: 1, name: 'FiberInn', tier: 'title', website: 'https://www.fiber-inn.nl', logo: `${CDN}/200000387-ab26fab270/FiberInn.png?ph=d6a25a83f1` },
-  { id: 2, name: 'Vorm4', tier: 'premium', website: 'https://www.vorm4.nl', logo: `${CDN}/200000119-ee730ee731/vorm4_logo.jpeg?ph=d6a25a83f1` },
-  { id: 3, name: 'Aart Terpstra', tier: 'premium', website: 'https://www.autofirst-aartterpstra.nl', logo: `${CDN}/200000137-09b0209b05/aart_terpstra.jpeg?ph=d6a25a83f1` },
-  { id: 4, name: 'BOB Keukenbouwer', tier: 'premium', website: 'https://www.bobkeukenbouwer.nl', logo: `${CDN}/200000121-a4851a4853/BOBkeukenbouwer_logo.jpeg?ph=d6a25a83f1` },
-  { id: 5, name: 'Caressi', tier: 'partner', website: 'https://www.caressi.nl', logo: `${CDN}/200000123-193fb193fe/caressi-logo.jpeg?ph=d6a25a83f1` },
-  { id: 6, name: 'WVT', tier: 'partner', website: 'https://www.wierdavoertuigtechniek.nl', logo: `${CDN}/200000125-d60e6d60e8/wvt%20logo.jpeg?ph=d6a25a83f1` },
-  { id: 7, name: 'Alluance', tier: 'partner', website: 'https://www.alluance.nl', logo: `${CDN}/200000141-6862b6862d/alluance_logo-1.png?ph=d6a25a83f1` },
-  { id: 8, name: 'Inzetonline', tier: 'partner', website: 'https://www.inzetonline.nl', logo: `${CDN}/200000139-a4886a4887/inzetonline-logo.png?ph=d6a25a83f1` },
-  { id: 9, name: 'Interlinie', tier: 'partner', website: 'https://www.interlinie.com', logo: `${CDN}/200000127-f3843f3845/interlinie%20logo.png?ph=d6a25a83f1` },
-  { id: 10, name: 'Colorspot', tier: 'partner', website: 'https://www.colorspot.nl', logo: `${CDN}/200000129-87ab287ab4/colorspot%20logo.jpeg?ph=d6a25a83f1` },
-  { id: 11, name: 'AZ Recruitment', tier: 'partner', website: 'https://www.azintermediair.nl', logo: `${CDN}/200000149-b82eeb82f0/AZ%20logo.jpeg?ph=d6a25a83f1` },
+  { id: 1, name: 'FiberInn', tier: 'title', website: 'https://www.fiber-inn.nl', logo: '/images/partners/fiberinn.webp' },
+  { id: 2, name: 'Vorm4', tier: 'premium', website: 'https://www.vorm4.nl', logo: '/images/partners/vorm4.webp' },
+  { id: 3, name: 'Aart Terpstra', tier: 'premium', website: 'https://www.autofirst-aartterpstra.nl', logo: '/images/partners/aart-terpstra.webp' },
+  { id: 4, name: 'BOB Keukenbouwer', tier: 'premium', website: 'https://www.bobkeukenbouwer.nl', logo: '/images/partners/bob-keukenbouwer.webp' },
+  { id: 5, name: 'Caressi', tier: 'partner', website: 'https://www.caressi.nl', logo: '/images/partners/caressi.webp' },
+  { id: 6, name: 'WVT', tier: 'partner', website: 'https://www.wierdavoertuigtechniek.nl', logo: '/images/partners/wvt.webp' },
+  { id: 7, name: 'Alluance', tier: 'partner', website: 'https://www.alluance.nl', logo: '/images/partners/alluance.webp' },
+  { id: 8, name: 'Inzetonline', tier: 'partner', website: 'https://www.inzetonline.nl', logo: '/images/partners/inzetonline.webp' },
+  { id: 9, name: 'Interlinie', tier: 'partner', website: 'https://www.interlinie.com', logo: '/images/partners/interlinie.webp' },
+  { id: 10, name: 'Colorspot', tier: 'partner', website: 'https://www.colorspot.nl', logo: '/images/partners/colorspot.webp' },
+  { id: 11, name: 'AZ Recruitment', tier: 'partner', website: 'https://www.azintermediair.nl', logo: '/images/partners/az-recruitment.webp' },
 ];
 
 export const merchItems = [
