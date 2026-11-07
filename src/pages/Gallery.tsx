@@ -58,9 +58,11 @@ export default function Gallery() {
     }))
   );
 
-  const allImages: GalleryImage[] = [...filtered, ...newsGalleryImages.filter(
-    (img) => !galleryImages.some((g) => g.url === img.url)
-  )];
+  const allImages: GalleryImage[] = Array.from(
+    new Map(
+      [...filtered, ...newsGalleryImages].map((img) => [img.url, img])
+    ).values()
+  );
 
   const goToPrev = useCallback(() => {
     setLightboxIndex((prev) => (prev === null ? null : (prev - 1 + allImages.length) % allImages.length));
