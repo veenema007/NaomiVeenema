@@ -479,10 +479,20 @@ export const galleryImages = [
   { id: 2, category: 'portraits', url: naomiImages.portraitRace, alt: 'Naomi in racepak met helm', title: 'Op het circuit' },
   { id: 3, category: 'races', url: naomiImages.action1, alt: 'Actie op het circuit', title: 'Zomeravond 2026' },
   { id: 4, category: 'races', url: naomiImages.action2, alt: 'Kart racing actie', title: 'Women\'s Only finale' },
-  { id: 5, category: 'podium', url: '/images/news/Champion.jpeg', alt: 'Kampioen Women\'s Only Kartcompetitie', title: 'Kampioen 2026' },
-  { id: 6, category: 'podium', url: '/images/news/Podium_WOKC_finals.jpeg', alt: 'Podium WOKC finals', title: 'Podium WOKC finale' },
-  { id: 7, category: 'races', url: '/images/news/Startopstelling.jpeg', alt: 'Startopstelling WOKC finale', title: 'Startopstelling finale' },
-  { id: 8, category: 'races', url: '/images/news/Juichen.jpeg', alt: 'Juichen na overwinning', title: 'Overwinning' },
+];
+
+export const assenGalleryImages = [
+  { id: 101, category: 'races', url: '/images/news/NXTGP_Assen-2303.jpg', alt: 'Podium NXT GP Dutch Open 7 Assen', title: 'NXT GP Assen podium' },
+  { id: 102, category: 'races', url: '/images/news/NXTGP_Assen-3280.jpg', alt: 'Naomi bij haar kart in Assen', title: 'NXT GP Assen' },
+  { id: 103, category: 'races', url: '/images/news/NXTGP_Assen-3273.jpg', alt: 'Naomi met haar kart in Assen', title: 'NXT GP Assen' },
+  { id: 104, category: 'races', url: '/images/news/NXTGP_Assen-1270.jpg', alt: 'Karting actie in Assen', title: 'NXT GP Assen' },
+  { id: 105, category: 'races', url: '/images/news/NXTGP_Assen-289.jpg', alt: 'Naomi tijdens de NXT GP in Assen', title: 'NXT GP Assen' },
+  { id: 106, category: 'races', url: '/images/news/NXTGP_Assen-63.jpg', alt: 'Karting op het circuit van Assen', title: 'NXT GP Assen' },
+  { id: 107, category: 'races', url: '/images/news/NXTGP_Assen-10.jpg', alt: 'Rijders op het circuit in Assen', title: 'NXT GP Assen' },
+  { id: 108, category: 'races', url: '/images/news/NXTGP_Assen-3727.jpg', alt: 'Karting actie tijdens de NXT GP Assen', title: 'NXT GP Assen' },
+  { id: 109, category: 'races', url: '/images/news/NXTGP_Assen-3768.jpg', alt: 'Karting actie op de baan in Assen', title: 'NXT GP Assen' },
+  { id: 110, category: 'races', url: '/images/news/NXTGP_Assen-3779.jpg', alt: 'Karts op het circuit in Assen', title: 'NXT GP Assen' },
+  { id: 111, category: 'races', url: '/images/news/NXTGP_Assen-3282.jpg', alt: 'Naomi tijdens de NXT GP in Assen', title: 'NXT GP Assen' },
 ];
 
 export const partners = [

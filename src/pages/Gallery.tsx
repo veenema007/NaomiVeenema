@@ -33,6 +33,13 @@ const galleryObjectPositions: Record<string, string> = {
   '/images/news/Sponsorevent_Sponsoren_01.jpeg': 'center 25%',
 };
 
+const excludedNewsGalleryImages = new Set([
+  '/images/news/Champion.jpeg',
+  '/images/news/Podium_WOKC_finals.jpeg',
+  '/images/news/Startopstelling.jpeg',
+  '/images/news/Juichen.jpeg',
+]);
+
 export default function Gallery() {
   const { t } = useLang();
   const [filter, setFilter] = useState<string>('all');
@@ -48,7 +55,9 @@ export default function Gallery() {
   const filtered = galleryImages.filter((img) => filter === 'all' || img.category === filter);
 
   const newsGalleryImages = newsArticles.flatMap((article) =>
-    (article.images ?? []).map((url, idx) => ({
+    (article.images ?? [])
+      .filter((url) => !excludedNewsGalleryImages.has(url))
+      .map((url, idx) => ({
       id: `news-${article.id}-${idx}`,
       category: 'races',
       url,
