@@ -2,7 +2,7 @@ const CDN = 'https://d6a25a83f1.clvaw-cdnwnd.com/8138f80bc5dd9efdf18efeaeff5fe96
 
 export const naomiImages = {
   logo: '/images/logo/ndv-logo.png',
-  portraitRace: `${CDN}/200000236-58ddb58dde/24277839-a6dc3828b5b58e0794ef.jpeg?ph=d6a25a83f1`,
+  portraitRace: '/images/homepage/24277839-a6dc3828b5b58e0794ef.jpg',
   action1: `${CDN}/200000234-495294952b/20260805_213725.jpeg?ph=d6a25a83f1`,
   drsZwolle: `${CDN}/200000176-9afdf9afe1/260531_DRS_Naomi_Zwolle9_logo-2.jpeg?ph=d6a25a83f1`,
   action2: `${CDN}/200000391-45d3e45d40/20250528_195310-85.jpeg?ph=d6a25a83f1`,
