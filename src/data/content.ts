@@ -287,6 +287,20 @@ export const careerHistory = [
 
 export const newsArticles = [
   {
+    id: 14,
+    category: 'race',
+    date: '2026-11-13',
+    image: '/images/news/aankondigingFinaLeaseCup.jpeg',
+    imagePosition: 'center 50%',
+    images: ['/images/news/aankondigingFinaLeaseCup.jpeg'],
+    titleNl: 'AANKONDIGING: In 2027 rijd ik in de FinaLeaseCup',
+    titleEn: 'ANNOUNCEMENT: I will race in the FinaLeaseCup in 2027',
+    excerptNl: 'Na enkele jaren in de karting maakt Naomi in 2027 de overstap naar de autosport in de FinaLeaseCup.',
+    excerptEn: 'After several years of karting, Naomi will make the step into car racing in 2027 with the FinaLeaseCup.',
+    bodyNl: 'Met trots kan ik nu vertellen dat ik na enkele jaren in de karting, de overstap ga maken naar de autosport. Komend seizoen ga ik rijden in de FinaLeaseCup met de BMW 120i.',
+    bodyEn: 'I am proud to announce that after several years of karting, I will make the step into car racing. Next season, I will race in the FinaLeaseCup with the BMW 120i.'
+  },
+  {
     id: 13,
     category: 'race',
     date: '2026-11-01',
