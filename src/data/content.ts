@@ -291,7 +291,7 @@ export const newsArticles = [
     category: 'race',
     date: '2026-11-13',
     image: '/images/news/aankondigingFinaLeaseCup.jpeg',
-    imagePosition: 'center 50%',
+    imagePosition: 'center 60%',
     images: ['/images/news/aankondigingFinaLeaseCup.jpeg'],
     titleNl: 'AANKONDIGING: In 2027 rijd ik in de FinaLeaseCup',
     titleEn: 'ANNOUNCEMENT: I will race in the FinaLeaseCup in 2027',
