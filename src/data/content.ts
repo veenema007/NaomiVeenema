@@ -515,17 +515,17 @@ export const assenGalleryImages = [
 ];
 
 export const partners = [
-  { id: 1, name: 'FiberInn', tier: 'title', website: 'https://www.fiber-inn.nl', logo: `${CDN}/200000387-ab26fab270/FiberInn.png?ph=d6a25a83f1` },
-  { id: 2, name: 'Vorm4', tier: 'premium', website: 'https://www.vorm4.nl', logo: `${CDN}/200000119-ee730ee731/vorm4_logo.jpeg?ph=d6a25a83f1` },
-  { id: 3, name: 'Aart Terpstra', tier: 'premium', website: 'https://www.autofirst-aartterpstra.nl', logo: `${CDN}/200000137-09b0209b05/aart_terpstra.jpeg?ph=d6a25a83f1` },
-  { id: 4, name: 'BOB Keukenbouwer', tier: 'premium', website: 'https://www.bobkeukenbouwer.nl', logo: `${CDN}/200000121-a4851a4853/BOBkeukenbouwer_logo.jpeg?ph=d6a25a83f1` },
-  { id: 5, name: 'Caressi', tier: 'partner', website: 'https://www.caressi.nl', logo: `${CDN}/200000123-193fb193fe/caressi-logo.jpeg?ph=d6a25a83f1` },
-  { id: 6, name: 'WVT', tier: 'partner', website: 'https://www.wierdavoertuigtechniek.nl', logo: `${CDN}/200000125-d60e6d60e8/wvt%20logo.jpeg?ph=d6a25a83f1` },
-  { id: 7, name: 'Alluance', tier: 'partner', website: 'https://www.alluance.nl', logo: `${CDN}/200000141-6862b6862d/alluance_logo-1.png?ph=d6a25a83f1` },
-  { id: 8, name: 'Inzetonline', tier: 'partner', website: 'https://www.inzetonline.nl', logo: `${CDN}/200000139-a4886a4887/inzetonline-logo.png?ph=d6a25a83f1` },
-  { id: 9, name: 'Interlinie', tier: 'partner', website: 'https://www.interlinie.com', logo: `${CDN}/200000127-f3843f3845/interlinie%20logo.png?ph=d6a25a83f1` },
-  { id: 10, name: 'Colorspot', tier: 'partner', website: 'https://www.colorspot.nl', logo: `${CDN}/200000129-87ab287ab4/colorspot%20logo.jpeg?ph=d6a25a83f1` },
-  { id: 11, name: 'AZ Recruitment', tier: 'partner', website: 'https://www.azintermediair.nl', logo: `${CDN}/200000149-b82eeb82f0/AZ%20logo.jpeg?ph=d6a25a83f1` },
+  { id: 1, name: 'FiberInn', tier: 'title', website: 'https://www.fiber-inn.nl', logo: '/images/logo/FiberInn.png' },
+  { id: 2, name: 'Vorm4', tier: 'premium', website: 'https://www.vorm4.nl', logo: '/images/logo/vorm4_logo.jpg' },
+  { id: 3, name: 'Aart Terpstra', tier: 'premium', website: 'https://www.autofirst-aartterpstra.nl', logo: '/images/logo/aart_terpstra.jpg' },
+  { id: 4, name: 'BOB Keukenbouwer', tier: 'premium', website: 'https://www.bobkeukenbouwer.nl', logo: '/images/logo/BOBkeukenbouwer_logo.jpg' },
+  { id: 5, name: 'Caressi', tier: 'partner', website: 'https://www.caressi.nl', logo: '/images/logo/caressi-logo.jpg' },
+  { id: 6, name: 'WVT', tier: 'partner', website: 'https://www.wierdavoertuigtechniek.nl', logo: '/images/logo/wvt_logo.jpg' },
+  { id: 7, name: 'Alluance', tier: 'partner', website: 'https://www.alluance.nl', logo: '/images/logo/alluance_logo-1.png' },
+  { id: 8, name: 'Inzetonline', tier: 'partner', website: 'https://www.inzetonline.nl', logo: '/images/logo/inzetonline-logo.png' },
+  { id: 9, name: 'Interlinie', tier: 'partner', website: 'https://www.interlinie.com', logo: '/images/logo/interlinie_logo.png' },
+  { id: 10, name: 'Colorspot', tier: 'partner', website: 'https://www.colorspot.nl', logo: '/images/logo/colorspot_logo.jpg' },
+  { id: 11, name: 'AZ Recruitment', tier: 'partner', website: 'https://www.azintermediair.nl', logo: '/images/logo/AZ_logo.jpg' },
 ];
 
 export const merchItems = [
