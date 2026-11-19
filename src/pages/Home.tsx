@@ -355,7 +355,7 @@ export default function Home() {
             <div className="relative">
               <div className="relative rounded-lg overflow-hidden">
                 <img
-                  src={naomiImages.action1}
+                  src="/images/news/DSC_2239.jpg"
                   alt="Naomi Veenema op het circuit"
                   className="w-full h-[500px] object-cover object-[center_25%]"
                   loading="lazy"
