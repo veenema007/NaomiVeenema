@@ -515,7 +515,7 @@ export default function Home() {
             </h2>
             <p className="text-white/70 text-lg mb-8">{t.home.ctaText}</p>
             <div className="flex flex-wrap gap-4">
-              <Link to="/contact" className="btn-gold group">
+              <Link to="/partners" className="btn-gold group">
                 {t.home.ctaButton}
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
