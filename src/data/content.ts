@@ -306,7 +306,12 @@ export const newsArticles = [
     date: '2026-11-01',
     image: '/images/news/NXTGP_Assen-2303.jpg',
     imagePosition: 'center 30%',
-    images: ['/images/news/NXTGP_Assen-2303.jpg'],
+    images: [
+      '/images/news/NXTGP_Assen-2303.jpg',
+      '/images/news/NXTGP_Assen-3273.jpg',
+      '/images/news/NXTGP_Assen-1270.jpg',
+      '/images/news/NXTGP_Assen-3727.jpg',
+    ],
     titleNl: 'Dubbel podium bij NXT GP Dutch Open 7 in Assen!',
     titleEn: 'Double podium at NXT GP Dutch Open 7 in Assen!',
     excerptNl: 'Op 30 oktober tot 1 november reed Naomi de NXT GP Dutch Open 7 op de TT Junior Track in Assen. Ze eindigde op de 2de plaats bij de Semi-Pro en ook 2de bij de Rookies.',
