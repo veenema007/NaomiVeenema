@@ -242,7 +242,7 @@ export const raceCalendar = [
     date: '2026-11-13',
     endDate: '2026-11-15',
     flag: '🇳🇱',
-    status: 'scheduled',
+    status: 'finished',
     time: '10:00 - 17:00',
   },
   {
