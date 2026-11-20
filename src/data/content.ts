@@ -364,7 +364,6 @@ export const newsArticles = [
       '/images/news/GT World Challenge NDV Valentino Rossi.jpeg',
       '/images/news/GT_World_Challenge_Laura_van_den_Hengel_Maserati_NDV.jpeg',
       '/images/news/GT_World_Challenge_Laura_van_den_Hengel_pitbox.jpeg',
-      '/images/news/GT_World_Challenge_NDV_gridwalk.jpeg',
     ],
     titleNl: 'Kijkje bij de GT World Challenge op Zandvoort',
     titleEn: 'A look at the GT World Challenge at Zandvoort',
