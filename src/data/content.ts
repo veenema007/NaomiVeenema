@@ -493,10 +493,7 @@ export const newsArticles = [
 ];
 
 export const galleryImages = [
-  { id: 1, category: 'races', url: naomiImages.drsZwolle, alt: 'Dutch Racing Series Zwolle', title: 'DRS Zwolle' },
   { id: 2, category: 'portraits', url: naomiImages.portraitRace, alt: 'Naomi in racepak met helm', title: 'Op het circuit' },
-  { id: 3, category: 'races', url: naomiImages.action1, alt: 'Actie op het circuit', title: 'Zomeravond 2026' },
-  { id: 4, category: 'races', url: naomiImages.action2, alt: 'Kart racing actie', title: 'Women\'s Only finale' },
 ];
 
 export const assenGalleryImages = [
