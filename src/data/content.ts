@@ -287,6 +287,25 @@ export const careerHistory = [
 
 export const newsArticles = [
   {
+    id: 15,
+    category: 'race',
+    date: '2026-11-22',
+    image: '/images/news/866e9e28-46fa-4b7e-8287-4ce01d6b331b.jpg',
+    imagePosition: 'center 50%',
+    images: [
+      '/images/news/866e9e28-46fa-4b7e-8287-4ce01d6b331b.jpg',
+      '/images/news/Raceauto_BMW.jpeg',
+      '/images/news/Cursusboek.jpeg',
+      '/images/news/Letsgo.jpeg',
+    ],
+    titleNl: 'Racelicentie is binnen!',
+    titleEn: 'Racing licence secured!',
+    excerptNl: 'De nationale racelicentie is binnen na een intensieve driedaagse racecursus bij PureDriving.',
+    excerptEn: 'The national racing licence is secured after an intensive three-day racing course at PureDriving.',
+    bodyNl: 'Yesss! De nationale racelicentie is binnen! Nu kan het racen gaan beginnen! Afgelopen weekend heb ik een 3 dagen lange racecursus gevolgd bij PureDriving. Elke dag bezig met oefeningen, zelfstandig rijden, tips krijgen van de instructeurs en theorie leren.\n\nNa een minder fijne eerste dag, waarbij de auto stuk ging, was de rest van het weekend top! Ik heb enorm veel geleerd, erg veel plezier gehad, en nog meer zin in volgend jaar gekregen!',
+    bodyEn: 'Yes! The national racing licence is secured! Now the racing can begin! Last weekend I completed a three-day racing course at PureDriving. Every day was filled with exercises, independent driving, tips from the instructors and theory lessons.\n\nAfter a less enjoyable first day, when the car broke down, the rest of the weekend was fantastic! I learned an incredible amount, had a lot of fun and became even more excited for next year.'
+  },
+  {
     id: 14,
     category: 'race',
     date: '2026-11-13',
